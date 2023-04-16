@@ -6,12 +6,6 @@ import { BsHeart } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { BsCart3, BsBoxArrowLeft } from "react-icons/bs";
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-// import { SiInstagram } from "react-icons/si";
-// import { AiOutlineYoutube } from "react-icons/ai";
-// import { FiFacebook } from "react-icons/fi";
-import { useEffect, useState, useRef } from 'react';
-import axios from 'axios';
 import Modal from './Modal';
 import Visa from '../assets/visa.png';
 import Elo from '../assets/elo.png';
@@ -28,67 +22,9 @@ import Instagram from '../assets/instagram.PNG';
 import Youtube from '../assets/youtube.PNG';
 import Econverse from '../assets/econverse.png';
 import Vtex from '../assets/vtex.png';
+import CardProduto from './CardProduto';
 
 function TelaPrincipal() {
-
-  const [data, setData] = useState([]);
-  const carousel = useRef(null);
-  const carousel2 = useRef(null);
-  const carousel3 = useRef(null);
-
-  const [openModal, setOpenModal] = useState(false)
-
-  useEffect(() =>{
-    axios.get("https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json")
-    .then((response)=>{
-        setData((response.data.products))
-        // console.log(response.data)
-    })
-    .catch(() =>{
-        console.log("deu tudo errado");
-    })
-
-}, [])
-
-const handleLeftClick = (e) =>{
-  e.preventDefault();
-  console.log(carousel.current.offsetWidth);
-  carousel.current.scrollLeft -= carousel.current.offsetWidth;
-}
-
-const handleLeftClick2 = (e) =>{
-  e.preventDefault();
-  console.log(carousel2.current.offsetWidth);
-  carousel2.current.scrollLeft -= carousel2.current.offsetWidth;
-}
-
-const handleLeftClick3 = (e) =>{
-  e.preventDefault();
-  console.log(carousel3.current.offsetWidth);
-  carousel3.current.scrollLeft -= carousel3.current.offsetWidth;
-}
-
-const handleRightClick = (e) =>{
-  e.preventDefault();
-  // console.log(carousel.current.offsetWidth);
-  carousel.current.scrollLeft += carousel.current.offsetWidth;
-}
-const handleRightClick2 = (e) =>{
-  e.preventDefault();
-  // console.log(carousel.current.offsetWidth);
-  carousel2.current.scrollLeft += carousel2.current.offsetWidth;
-}
-
-const handleRightClick3 = (e) =>{
-  e.preventDefault();
-  // console.log(carousel.current.offsetWidth);
-  carousel3.current.scrollLeft += carousel3.current.offsetWidth;
-}
-
-
-
-
-  if(!data || !data.length) return null
 
 
   return (
@@ -264,63 +200,10 @@ const handleRightClick3 = (e) =>{
                   <li>ver todos</li>
                 </ul>
               </div>
-              {/* <div className='verTodos'>
-                    <h4>
-                      Ver todos
-                    </h4>
-                </div> */}
           </div>
 
-          <div className='container'>
-              <div className='cardsProdutos' ref={carousel}> 
-                 
-                      {data.map((dat, key)=>{
-
-                          return(
-                            <div className='cardCelulares' >
-                            <div className='subCardCelulares'>
-                              <div className='imagemCardCelulares'>
-                                <img src={dat.photo}/>
-                              </div>
-                              <div className='descricaoCardCelulares'>
-                                <p> {dat.descriptionShort}</p>
-                              </div>
-                              <div className='nomeCardCelulares'>
-                              <p>{dat.productName}</p>
-                               
-                              </div>
-                              <div className='valorAntesCardCelulares'>
-                                <span>R$</span>30,90
-                              </div>
-                              <div className='precoCardCelulares'>
-                              <span>R$</span>{dat.price}
-                              </div>
-                              <div className='jurosCardCelulares'>
-                                <p>ou 2x de R$ 49,95 sem juros</p>
-                              </div>
-                              
-                              <div className='freteCardCelulares'></div>
-                              <div className='buttonCardCelulares'>
-                              <button >Comprar</button>
-                              
-                              </div>
-                              
-                            </div>
-                          </div> 
-                           )
-                          })}
-                   
-              </div>
-
-                <div className="buttonsSetas">
-                   <button onClick={handleLeftClick}>
-                      <IoIosArrowBack className='setaEsquerda' size={50}/>
-                    </button>
-                   <button onClick={handleRightClick}>
-                      <IoIosArrowForward className='setaDireita' size={50}/>
-                   </button>
-                </div>
-
+          <div>
+            <CardProduto/>
           </div>
 
           <div className='container'>
@@ -369,55 +252,7 @@ const handleRightClick3 = (e) =>{
                     </h4>
                 </div>
           </div>
-          <div className='container'>
-              <div className='cardsProdutos' ref={carousel2}> 
-                 
-                      {data.map((dat, key)=>{
-
-                          return(
-                            <div className='cardCelulares' >
-                            <div className='subCardCelulares'>
-                              <div className='imagemCardCelulares'>
-                                <img src={dat.photo}/>
-                              </div>
-                              <div className='descricaoCardCelulares'>
-                                <p> {dat.descriptionShort}</p>
-                              </div>
-                              <div className='nomeCardCelulares'>
-                              <p>{dat.productName}</p>
-                               
-                              </div>
-                              <div className='valorAntesCardCelulares'>
-                                <span>R$</span>30,90
-                              </div>
-                              <div className='precoCardCelulares'>
-                              <span>R$</span>{dat.price}
-                              </div>
-                              <div className='jurosCardCelulares'>
-                                <p>ou 2x de R$ 49,95 sem juros</p>
-                              </div>
-                              
-                              <div className='freteCardCelulares'></div>
-                              <div className='buttonCardCelulares'>
-                                <button>Comprar</button>
-                              </div>
-                            </div>
-                          </div> 
-                           )
-                          })}
-                   
-              </div>
-
-                <div className="buttonsSetas">
-                   <button onClick={handleLeftClick2}>
-                      <IoIosArrowBack className='setaEsquerda' size={50}/>
-                    </button>
-                   <button onClick={handleRightClick2}>
-                      <IoIosArrowForward className='setaDireita' size={50}/>
-                   </button>
-                </div>
-
-        </div>
+          <CardProduto/>
           <div className='container'>
               <div className='parceiros'>
                 <div className='parceirosImagem'>
@@ -493,55 +328,7 @@ const handleRightClick3 = (e) =>{
                     </h4>
                 </div>
           </div>
-          <div className='container'>
-              <div className='cardsProdutos' ref={carousel3}> 
-                 
-                      {data.map((dat, key)=>{
-
-                          return(
-                            <div className='cardCelulares' >
-                            <div className='subCardCelulares'>
-                              <div className='imagemCardCelulares'>
-                                <img src={dat.photo}/>
-                              </div>
-                              <div className='descricaoCardCelulares'>
-                                <p> {dat.descriptionShort}</p>
-                              </div>
-                              <div className='nomeCardCelulares'>
-                              <p>{dat.productName}</p>
-                               
-                              </div>
-                              <div className='valorAntesCardCelulares'>
-                                <span>R$</span>30,90
-                              </div>
-                              <div className='precoCardCelulares'>
-                              <span>R$</span>{dat.price}
-                              </div>
-                              <div className='jurosCardCelulares'>
-                                <p>ou 2x de R$ 49,95 sem juros</p>
-                              </div>
-                              
-                              <div className='freteCardCelulares'></div>
-                              <div className='buttonCardCelulares'>
-                                <button>Comprar</button>
-                              </div>
-                            </div>
-                          </div> 
-                           )
-                          })}
-                   
-              </div>
-
-                <div className="buttonsSetas">
-                   <button onClick={handleLeftClick3}>
-                      <IoIosArrowBack className='setaEsquerda' size={50}/>
-                    </button>
-                   <button onClick={handleRightClick3}>
-                      <IoIosArrowForward className='setaDireita' size={50}/>
-                   </button>
-                </div>
-
-        </div>
+            <CardProduto/>
         {/* <button onClick={() =>setOpenModal(true)}>Comprar</button>
                   {openModal ? <Modal onClose={() => setOpenModal(false)}>
                     <h2> Modal App</h2>
