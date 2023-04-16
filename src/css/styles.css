@@ -661,7 +661,7 @@ footer{
     height:224px;
     /* margin-top:39px; */
     margin-right:50px;
-    padding-top:15px;
+    padding-top:60px;
     /* background-color:green; */
 }
 .tituloSobreNos h3{
@@ -674,6 +674,35 @@ footer{
     line-height: 20px;
     color: #FFFFFF;
     
+}
+
+.iconesRedeSociais{
+    width:inherit;
+    height:50px;
+    margin-top:120px;
+    /* margin-left:-30px; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+   /* background-color:#ffffff; */
+   
+}
+
+.iconesSociaisFace{
+    width:30px;
+    padding-right:24px;
+}
+
+.iconesSociaisInsta{
+    width:30px;
+    padding-left:10px;
+   
+}
+
+.iconesSociaisYoutube{
+    width:30px;
+    padding-left:36px;
+   
 }
 
 .opcoesParaCliente{
@@ -691,46 +720,188 @@ footer{
 }
 
 .informacoes{
-    width:150px;
+    width:180px;
     height:236px;
-    margin-left:13px;
+    margin-left:40px;
+    margin-top:60px;
     /* background-color:green; */
 }
 
 .formasPagamento{
     width:195px;
     height:192.55px;
-    margin-left:13px;
+    margin-left:55px;
+    
     /* background-color:green; */
-}
-.iconesRedeSociais{
-    width:200px;
-    height:22px;
-    margin-top:140px;
-   /* margin-right:-40px; */
-   /* background-color:#ffffff; */
-   
+    
 }
 
-.iconesSociais{
-    /* width:30px; */
-    /* margin-left:-10px; */
-    padding-left:20px;
+
+.tituloInformacoesPagamentos{
+    width:255px;
+    height:20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom:20px;
+}
+
+.iconesPagamento{
+    width:195px;
+    height:172px;
+    display:flex;
+    direction:row;
+    display: inline-flex;
+    flex-wrap: wrap;
+    /* background-color:red; */
+    
+}
+.imgPagamento{
+    width:50px;
+    height:30px;
+    /* background-color:blue; */
+    margin-left:15px;
    
 }
+.imgPagamento img{
+    padding:8px;
+    margin-left:-20px;
+  
+}
+
 
 .cadastro{
-    width:380px;
+    width:420px;
     height:260px;
-    margin-left:13px;
+    margin-left:130px;
+    background: #FFFFFF;
+    border-radius: 10px;
+
+}
+
+.tituloCadastro{
+    width:390px;
+    height:51px;
+    margin-top:45px;
+    
+    /* background-color:red; */
+}
+
+
+
+.tituloCadastroReceba{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #3F3F40;
+    text-align:center;
+}
+
+.tituloCadastro h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 26px;
+    color: #3F3F40;
+    font-weight: 700;
+    text-align:center;
+    margin-left:-35px;
+}
+
+.descricaoCadastro{
+    width:350px;
+    height:55px;
+    margin-top:20px;
+    margin-left:33px;
+    /* background-color:blue; */
+
+}
+.textoAfastado{
+    padding-left:70px;
+}
+
+.campoCadastro{
+    width:301px;
+    height:45px;
     /* background-color:green; */
+    margin-top:10px;
+    margin-left:55px;
+    display:flex;
+    direction:row;
+}
+
+.campoCadastroInput{
+    width:230px;
+    height:45px;
+    background: #FFFFFF;
+    border: 1px solid #2A2A2A;
+    border-radius: 4px;
+    padding-left:20px;
+    text-transform: uppercase;
+}
+
+.campoCadastroInput input::placeholder {
+    color: #C0C0C0;
+}
+
+.campoCadastroButton{
+    width:62px;
+    height:45px;
+    background: #F71963;
+    border-radius: 4px;
+    outline:0;
+    border:0;
+    text-transform:uppercase;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left:10px;
+
 }
 
 .segundaParteFooter{
     width:1280px;
     height:70px;
+    border-top: 2px solid #ffffff;
+    display:flex;
+    direction:row;
     /* background-color:blue; */
 }
+
+.textoCopyright{
+    width:698px;
+    height:26px;
+    margin-top:18px;
+    margin-left:100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.logoEconverse{
+    margin-left:190px;
+    margin-top:18px;
+}
+
+.logoVtex{
+    margin-left:30px;
+    margin-top:18px;
+}
+
 
 
 

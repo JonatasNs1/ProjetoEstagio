@@ -7,18 +7,36 @@ import { CiSearch } from "react-icons/ci";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { BsCart3, BsBoxArrowLeft } from "react-icons/bs";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import { SiInstagram } from "react-icons/si";
-import { AiOutlineYoutube } from "react-icons/ai";
-import { FiFacebook } from "react-icons/fi";
+// import { SiInstagram } from "react-icons/si";
+// import { AiOutlineYoutube } from "react-icons/ai";
+// import { FiFacebook } from "react-icons/fi";
 import { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
-
-
+import Modal from './Modal';
+import Visa from '../assets/visa.png';
+import Elo from '../assets/elo.png';
+import Alelo from '../assets/alelo.png';
+import Dinners from '../assets/dinners.png';
+import Ifood from '../assets/ifood.png';
+import Mastercard from '../assets/mastercard.png';
+import Pix from '../assets/pix.png';
+import Amex from '../assets/amex.png';
+import Ticket from '../assets/ticket.png';
+import Sodexo from '../assets/sodexo.png';
+import Facebook from '../assets/facebook.PNG';
+import Instagram from '../assets/instagram.PNG';
+import Youtube from '../assets/youtube.PNG';
+import Econverse from '../assets/econverse.png';
+import Vtex from '../assets/vtex.png';
 
 function TelaPrincipal() {
 
   const [data, setData] = useState([]);
   const carousel = useRef(null);
+  const carousel2 = useRef(null);
+  const carousel3 = useRef(null);
+
+  const [openModal, setOpenModal] = useState(false)
 
   useEffect(() =>{
     axios.get("https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json")
@@ -38,11 +56,35 @@ const handleLeftClick = (e) =>{
   carousel.current.scrollLeft -= carousel.current.offsetWidth;
 }
 
+const handleLeftClick2 = (e) =>{
+  e.preventDefault();
+  console.log(carousel2.current.offsetWidth);
+  carousel2.current.scrollLeft -= carousel2.current.offsetWidth;
+}
+
+const handleLeftClick3 = (e) =>{
+  e.preventDefault();
+  console.log(carousel3.current.offsetWidth);
+  carousel3.current.scrollLeft -= carousel3.current.offsetWidth;
+}
+
 const handleRightClick = (e) =>{
   e.preventDefault();
   // console.log(carousel.current.offsetWidth);
   carousel.current.scrollLeft += carousel.current.offsetWidth;
 }
+const handleRightClick2 = (e) =>{
+  e.preventDefault();
+  // console.log(carousel.current.offsetWidth);
+  carousel2.current.scrollLeft += carousel2.current.offsetWidth;
+}
+
+const handleRightClick3 = (e) =>{
+  e.preventDefault();
+  // console.log(carousel.current.offsetWidth);
+  carousel3.current.scrollLeft += carousel3.current.offsetWidth;
+}
+
 
 
 
@@ -259,8 +301,10 @@ const handleRightClick = (e) =>{
                               
                               <div className='freteCardCelulares'></div>
                               <div className='buttonCardCelulares'>
-                                <button>Comprar</button>
+                              <button >Comprar</button>
+                              
                               </div>
+                              
                             </div>
                           </div> 
                            )
@@ -326,7 +370,7 @@ const handleRightClick = (e) =>{
                 </div>
           </div>
           <div className='container'>
-              <div className='cardsProdutos' ref={carousel}> 
+              <div className='cardsProdutos' ref={carousel2}> 
                  
                       {data.map((dat, key)=>{
 
@@ -365,10 +409,10 @@ const handleRightClick = (e) =>{
               </div>
 
                 <div className="buttonsSetas">
-                   <button onClick={handleLeftClick}>
+                   <button onClick={handleLeftClick2}>
                       <IoIosArrowBack className='setaEsquerda' size={50}/>
                     </button>
-                   <button onClick={handleRightClick}>
+                   <button onClick={handleRightClick2}>
                       <IoIosArrowForward className='setaDireita' size={50}/>
                    </button>
                 </div>
@@ -450,7 +494,7 @@ const handleRightClick = (e) =>{
                 </div>
           </div>
           <div className='container'>
-              <div className='cardsProdutos' ref={carousel}> 
+              <div className='cardsProdutos' ref={carousel3}> 
                  
                       {data.map((dat, key)=>{
 
@@ -489,15 +533,19 @@ const handleRightClick = (e) =>{
               </div>
 
                 <div className="buttonsSetas">
-                   <button onClick={handleLeftClick}>
+                   <button onClick={handleLeftClick3}>
                       <IoIosArrowBack className='setaEsquerda' size={50}/>
                     </button>
-                   <button onClick={handleRightClick}>
+                   <button onClick={handleRightClick3}>
                       <IoIosArrowForward className='setaDireita' size={50}/>
                    </button>
                 </div>
 
         </div>
+        {/* <button onClick={() =>setOpenModal(true)}>Comprar</button>
+                  {openModal ? <Modal onClose={() => setOpenModal(false)}>
+                    <h2> Modal App</h2>
+                    </Modal>: null} */}
     </main>
 
     <footer>
@@ -517,18 +565,112 @@ const handleRightClick = (e) =>{
                 </div>
                  
                 <div className='iconesRedeSociais'>
-                  <FiFacebook className='iconesSociais' size={25}/>
-                  <SiInstagram className='iconesSociais'  size={25}/>
-                  <AiOutlineYoutube className='iconesSociais' size={25}/>
-
+                  <div className='iconesSociaisFace'>
+                    <img src={Facebook} alt="facebook"/>
+                  </div>
+                  <div className='iconesSociaisInsta'>
+                    <img src={Instagram} alt="facebook"/>
+                  </div>
+                  <div className='iconesSociaisYoutube'>
+                    <img src={Youtube} alt="facebook"/>
+                  </div>
                  
                 </div>        
               </div>
-              <div className='informacoes'></div>
-              <div className='formasPagamento'></div>
-              <div className='cadastro'></div>
+              <div className='informacoes'>
+                        <div className='tituloInformacoesPagamentos'>
+                          <h3>informações úteis</h3>
+                        </div>
+                        <div className='opcoesParaCliente'>
+                        <p>
+                          fale conosco <th/>
+                          dúvidas<th/>
+                          prazos de entrega <th/>
+                          formas de formasPagamento <th/>
+                          politica de privacidade <th/>
+                          trocas e devoluções <th/>
+                          
+                        </p>
+                </div>
+
+              </div>
+              <div className='formasPagamento'>
+                  <div className='tituloInformacoesPagamentos'>
+                          <h3>formas de pagamento</h3>
+                  </div>
+                  <div className='iconesPagamento'>
+                    <div className='imgPagamento'>
+                        <img src={Visa}/>
+                    </div>
+                    <div className='imgPagamento'>
+                        <img src={Elo}/>
+                    </div>
+                    <div className='imgPagamento'>
+                        <img src={Alelo}/>
+                    </div>
+                    <div className='imgPagamento'>
+                        <img src={Dinners}/>
+                    </div>
+                    <div className='imgPagamento'>
+                        <img src={Ifood}/>
+                    </div>
+                    <div className='imgPagamento'>
+                        <img src={Mastercard}/>
+                    </div>
+                    <div className='imgPagamento'>
+                        <img src={Pix}/>
+                    </div>
+                    <div className='imgPagamento'>
+                        <img src={Amex}/>
+                    </div>
+                    <div className='imgPagamento'>
+                        <img src={Ticket}/>
+                    </div>
+                    <div className='imgPagamento'>
+                        <img src={Sodexo}/>
+                    </div>
+                  </div>
+
+              </div>
+
+              <div className='cadastro'>
+                <div className='tituloCadastro'>
+                    <h1 className='tituloCadastroReceba'>
+                    Cadastre-se e Receba nossas
+                   
+                    </h1>
+                    <h2>
+                      novidades e promoções
+                    </h2>
+                </div>
+                <div className='descricaoCadastro'>
+                      <div className='descricaoCadastroText'>
+                          <p>
+                          Excepteur sint occaecat cudatat non ent, sunt in
+                          </p>
+                          <p className='textoAfastado'>
+                          culpa qui officia lorem ipsum
+                          </p>
+                      </div>
+                </div>
+                <div className='campoCadastro'>
+                    <input className='campoCadastroInput' placeholder="Seu e-mail"/>
+                    <button className='campoCadastroButton'>ok</button>
+                </div>
+              </div>
             </div>
-            <div className='segundaParteFooter'></div>             
+            <div className='segundaParteFooter'>
+                    <div className='textoCopyright '>
+                      <p>Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas imagens são de propriedade de seus respectivos donos.  
+                          É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.</p>
+                    </div>
+                    <div className='logoEconverse'>
+                        <img src={Econverse}/>
+                    </div>
+                    <div className='logoVtex'>
+                    <img src={Vtex}/>
+                    </div>
+            </div>             
         </div>
     </footer>
 
