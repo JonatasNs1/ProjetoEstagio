@@ -226,7 +226,7 @@ padding-left: 89px;
 .opcoes{
     width:1280px;
     height:190px;
-    /* background-color:red; */
+    /* background-color:blue; */
     display:flex;
     justify-content:center;
     direction:row;
@@ -235,10 +235,10 @@ padding-left: 89px;
 .cards{
     width:128px;
     height:128px;
-    background-color:#FFFFFF;
+    /* background-color:red; */
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.22);
     border-radius: 10px;
-    margin-top:25px;
+    margin-top:35px;
     margin-left:30px;
     display:flex;
     justify-content:center;
@@ -248,7 +248,42 @@ padding-left: 89px;
 .imgCards{
     width:61px;
     height:61px;
-     
+}
+
+.subTituloOpcoes{
+    width:1280px;
+    height:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    direction:row;
+    /* background-color:green; */
+}
+
+.listasOpcoes{
+    width:1141px;
+    height:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    direction:row;
+    /* background-color:red; */
+}
+
+.listasOpcoes li{
+    width: 122px;
+    height: 24px;
+    list-style: none;
+    color:#4E4E4E;;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-left:37px;
+    /* background-color:blue; */
+
 }
 
 .produtosRelacionados{
@@ -549,6 +584,153 @@ color:#FFFFFF;
     text-transform: uppercase;
 }    
 
+.navegueMarcas{
+    width:1280px;
+    height:331px;
+    /* background-color:red; */
+    
+}
+
+.tituloMarcas{
+    width:1280px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    direction:column;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    color: #F71963;
+    padding-top:90px;
+
+}
+
+.todasAsMarcas{
+    width:1280px;
+    height:234px;
+    overflow-x: sroll;
+    display:flex;
+    direction:row;
+    /* background-color:blue; */
+}
+
+.circuloMarca{
+    width:211px;
+    height:211px;
+    margin-top:8px;
+    margin-left:8px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
+    border-radius:110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.imagemCirculoMarca{
+    width:172px;
+    height:62.66px;
+   
+}
+
+footer{
+    background-color: #2A2A2A;;
+    height: 395px;
+    width: 1280px;
+    position: relative;
+    z-index: 999;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.primeiraParteFooter{
+    width:1280px;
+    height:325px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    direction:row;
+        /* background-color:red; */
+    
+}
+
+.sobreNos{
+    width:155px;
+    height:224px;
+    /* margin-top:39px; */
+    margin-right:50px;
+    padding-top:15px;
+    /* background-color:green; */
+}
+.tituloSobreNos h3{
+    width:66px;
+    height:20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    
+}
+
+.opcoesParaCliente{
+    width:300px;
+    height:20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top:10px;
+    /* padding-top:18px; */
+}
+
+.informacoes{
+    width:150px;
+    height:236px;
+    margin-left:13px;
+    /* background-color:green; */
+}
+
+.formasPagamento{
+    width:195px;
+    height:192.55px;
+    margin-left:13px;
+    /* background-color:green; */
+}
+.iconesRedeSociais{
+    width:200px;
+    height:22px;
+    margin-top:140px;
+   /* margin-right:-40px; */
+   /* background-color:#ffffff; */
+   
+}
+
+.iconesSociais{
+    /* width:30px; */
+    /* margin-left:-10px; */
+    padding-left:20px;
+   
+}
+
+.cadastro{
+    width:380px;
+    height:260px;
+    margin-left:13px;
+    /* background-color:green; */
+}
+
+.segundaParteFooter{
+    width:1280px;
+    height:70px;
+    /* background-color:blue; */
+}
 
 
 

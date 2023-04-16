@@ -7,7 +7,9 @@ import { CiSearch } from "react-icons/ci";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { BsCart3, BsBoxArrowLeft } from "react-icons/bs";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-
+import { SiInstagram } from "react-icons/si";
+import { AiOutlineYoutube } from "react-icons/ai";
+import { FiFacebook } from "react-icons/fi";
 import { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 
@@ -162,7 +164,9 @@ const handleRightClick = (e) =>{
                     </div>
                     
                     <div className='cards'>
-                        <img className='imgCards' src={require("../assets/supermercado.png")}/>
+                      
+                       <img className='imgCards' src={require("../assets/supermercado.png")}/>
+                      
                     </div>
                       <div className='cards'>
                       <img className='imgCards' src={require("../assets/bebidas.png")}/>
@@ -184,9 +188,20 @@ const handleRightClick = (e) =>{
                       
                       <div>
                 
-              </div>  
+                </div>  
               
               </div> 
+              <div className='subTituloOpcoes'>
+              <ul className='listasOpcoes'>
+                  <li><span className='linkPromocao'>Tecnologia<span/></span></li>
+                  <li>Supermercado</li>
+                  <li>Bebidas</li>
+                  <li>Ferramentas</li>
+                  <li>Saúde</li>
+                  <li>Esporte e Fitness</li>
+                  <li>Moda</li>
+                </ul>
+              </div>
           </div>
 
           <div className='container'>
@@ -199,7 +214,7 @@ const handleRightClick = (e) =>{
               </div>
               <div className='opcoesDeMenu'>
                 <ul className='listasOpcoesMenu'>
-                  <li>celular</li>
+                  <li><span className='linkPromocao'>celular<span/></span></li>
                   <li>acessorios</li>
                   <li>tablets</li>
                   <li>notbooks</li>
@@ -295,8 +310,227 @@ const handleRightClick = (e) =>{
                
               </div>
           </div>
+          <div className='container'>
+              <div  className='produtosRelacionados'>
+                <div className='teste'>
+                    <h1>
+                      Produtos relacionados
+                    </h1>
+                </div>    
+              </div>
           
+              <div className='verTodos'>
+                    <h4>
+                      Ver todos
+                    </h4>
+                </div>
+          </div>
+          <div className='container'>
+              <div className='cardsProdutos' ref={carousel}> 
+                 
+                      {data.map((dat, key)=>{
+
+                          return(
+                            <div className='cardCelulares' >
+                            <div className='subCardCelulares'>
+                              <div className='imagemCardCelulares'>
+                                <img src={dat.photo}/>
+                              </div>
+                              <div className='descricaoCardCelulares'>
+                                <p> {dat.descriptionShort}</p>
+                              </div>
+                              <div className='nomeCardCelulares'>
+                              <p>{dat.productName}</p>
+                               
+                              </div>
+                              <div className='valorAntesCardCelulares'>
+                                <span>R$</span>30,90
+                              </div>
+                              <div className='precoCardCelulares'>
+                              <span>R$</span>{dat.price}
+                              </div>
+                              <div className='jurosCardCelulares'>
+                                <p>ou 2x de R$ 49,95 sem juros</p>
+                              </div>
+                              
+                              <div className='freteCardCelulares'></div>
+                              <div className='buttonCardCelulares'>
+                                <button>Comprar</button>
+                              </div>
+                            </div>
+                          </div> 
+                           )
+                          })}
+                   
+              </div>
+
+                <div className="buttonsSetas">
+                   <button onClick={handleLeftClick}>
+                      <IoIosArrowBack className='setaEsquerda' size={50}/>
+                    </button>
+                   <button onClick={handleRightClick}>
+                      <IoIosArrowForward className='setaDireita' size={50}/>
+                   </button>
+                </div>
+
+        </div>
+          <div className='container'>
+              <div className='parceiros'>
+                <div className='parceirosImagem'>
+                    <div className='textoParceiros'>
+                      <h1>Parceiros</h1>
+                    </div>
+                    <div className='descricaoParceiros'>
+                      <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    </div>
+                    <div className='buttonParceiros'>
+                        <button>
+                          confira
+                        </button>
+                    </div>
+                </div>
+                <div className='parceirosImagem'>
+                      <div className='textoParceiros'>
+                        <h1>Parceiros</h1>
+                      </div>
+                      <div className='descricaoParceiros'>
+                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                      </div>
+                      <div className='buttonParceiros'>
+                        <button>
+                          confira
+                        </button>
+                      </div>
+                </div>
+               
+              </div>
+          </div>
+
+          <div className='container'>
+                <div className='navegueMarcas'>
+                      <div className='tituloMarcas'>
+                          <h1>
+                          Navegue por marcas
+                          </h1>
+                      </div>
+                      <div className='todasAsMarcas'>
+                            <div className='circuloMarca'>
+                              <img className='imagemCirculoMarca' src={require("../assets/logo.png")}/>
+                            </div>
+                            <div className='circuloMarca'>
+                              <img className='imagemCirculoMarca' src={require("../assets/logo.png")}/>
+                            </div>
+                            <div className='circuloMarca'>
+                              <img className='imagemCirculoMarca' src={require("../assets/logo.png")}/>
+                            </div>
+                            <div className='circuloMarca'>
+                              <img className='imagemCirculoMarca' src={require("../assets/logo.png")}/>
+                            </div>
+                            <div className='circuloMarca'>
+                              <img className='imagemCirculoMarca' src={require("../assets/logo.png")}/>
+                            </div>
+                            
+                      </div>
+                </div>       
+          </div>
+          
+          <div className='container'>
+              <div  className='produtosRelacionados'>
+                <div className='teste'>
+                    <h1>
+                      Produtos relacionados
+                    </h1>
+                </div>    
+              </div>
+          
+              <div className='verTodos'>
+                    <h4>
+                      Ver todos
+                    </h4>
+                </div>
+          </div>
+          <div className='container'>
+              <div className='cardsProdutos' ref={carousel}> 
+                 
+                      {data.map((dat, key)=>{
+
+                          return(
+                            <div className='cardCelulares' >
+                            <div className='subCardCelulares'>
+                              <div className='imagemCardCelulares'>
+                                <img src={dat.photo}/>
+                              </div>
+                              <div className='descricaoCardCelulares'>
+                                <p> {dat.descriptionShort}</p>
+                              </div>
+                              <div className='nomeCardCelulares'>
+                              <p>{dat.productName}</p>
+                               
+                              </div>
+                              <div className='valorAntesCardCelulares'>
+                                <span>R$</span>30,90
+                              </div>
+                              <div className='precoCardCelulares'>
+                              <span>R$</span>{dat.price}
+                              </div>
+                              <div className='jurosCardCelulares'>
+                                <p>ou 2x de R$ 49,95 sem juros</p>
+                              </div>
+                              
+                              <div className='freteCardCelulares'></div>
+                              <div className='buttonCardCelulares'>
+                                <button>Comprar</button>
+                              </div>
+                            </div>
+                          </div> 
+                           )
+                          })}
+                   
+              </div>
+
+                <div className="buttonsSetas">
+                   <button onClick={handleLeftClick}>
+                      <IoIosArrowBack className='setaEsquerda' size={50}/>
+                    </button>
+                   <button onClick={handleRightClick}>
+                      <IoIosArrowForward className='setaDireita' size={50}/>
+                   </button>
+                </div>
+
+        </div>
     </main>
+
+    <footer>
+        <div className='container'>
+            <div className='primeiraParteFooter'>
+              <div className='sobreNos'>
+                <div className='tituloSobreNos'>
+                    <h3>Sobre nós</h3>
+                </div>
+                <div className='opcoesParaCliente'>
+                        <p>
+                          conheça <th/>
+                          como comprar<th/>
+                          indicacao e desconto
+                          
+                        </p>
+                </div>
+                 
+                <div className='iconesRedeSociais'>
+                  <FiFacebook className='iconesSociais' size={25}/>
+                  <SiInstagram className='iconesSociais'  size={25}/>
+                  <AiOutlineYoutube className='iconesSociais' size={25}/>
+
+                 
+                </div>        
+              </div>
+              <div className='informacoes'></div>
+              <div className='formasPagamento'></div>
+              <div className='cadastro'></div>
+            </div>
+            <div className='segundaParteFooter'></div>             
+        </div>
+    </footer>
 
     </div>
 
