@@ -1,0 +1,47 @@
+.banner{
+    width:1280px;
+    height:390px;
+    /* background-color:red; */
+    background:url("../assets/banner.png");
+
+}
+.banner img{
+    width:inherit;
+    height: inherit;
+}
+
+.descricaoPromocao{
+width: 822px;
+height: 128px;
+padding-top: 55px;
+padding-left: 89px;
+
+
+}
+
+.descricaoPromocao p{
+    font-size: 48px;
+    font-weight: bold;
+    line-height:72px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.buttonVerProduto{
+    margin-top:20px;
+    width: 227px;
+    height:60px;
+    background-color:#F71963;
+    border-radius: 5px;
+    outline: 0;
+    font-weight:bold;
+    font-size:18px;
+    color:#FFFFFF;
+    border:0;
+    align-text:center;
+}
+
+.buttonVerProduto:hover{
+    cursor:pointer;
+}

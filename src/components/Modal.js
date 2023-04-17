@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/styles.css';
 import { GrClose } from "react-icons/gr";
-
+import '../styles/modal.scss';
 
 
 export default function Modal({id="productsName",onClose = () => {}, children}) {

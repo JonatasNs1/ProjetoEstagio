@@ -1,0 +1,53 @@
+.produtosRelacionados{
+
+    width:1280px;
+    height:72px;
+    margin-top:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    direction:column;
+    //  background-color:red; 
+  
+}
+
+
+.produtosRelacionados {
+    h1{
+        width: 350px;
+        height:45px;
+        fontWeight: 'bold';
+        font-size: 30px;
+        font-family: 'Poppins';
+        font-style: normal;
+        color: #F71963;
+        text-align:center;
+        padding-top:30px;
+    }
+
+}
+
+.verTodos {
+    width: 1280px;
+    height:23px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+      
+     
+      /* background-color:blue; */
+
+    
+}
+
+.verTodos {
+    h4{
+        font-weight: bold;
+        font-size: 15px;
+        color:#3F3F40;
+        text-align:center;
+        font-family: 'Poppins';
+        font-style: normal;
+    }
+  
+}

@@ -1,0 +1,227 @@
+
+.primeiraParteFooter{
+    width:1280px;
+    height:325px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    direction:row;
+    
+}
+
+.sobreNos{
+    width:155px;
+    height:224px;
+    margin-right:50px;
+    padding-top:60px;
+
+}
+.tituloSobreNos{
+    h3{
+        width:66px;
+        height:20px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+   
+    
+}
+
+.iconesRedeSociais{
+    width:inherit;
+    height:50px;
+    margin-top:120px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+   
+}
+
+.iconesSociaisFace{
+    width:30px;
+    padding-right:24px;
+}
+
+.iconesSociaisInsta{
+    width:30px;
+    padding-left:10px;
+   
+}
+
+.iconesSociaisYoutube{
+    width:30px;
+    padding-left:36px;
+   
+}
+
+
+.opcoesParaCliente{
+    width:300px;
+    height:20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top:10px;
+
+}
+
+.informacoes{
+    width:180px;
+    height:236px;
+    margin-left:40px;
+    margin-top:60px;
+}
+
+.formasPagamento{
+    width:195px;
+    height:192.55px;
+    margin-left:55px;
+    
+    
+}
+
+
+.tituloInformacoesPagamentos{
+    width:255px;
+    height:20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom:20px;
+}
+
+.iconesPagamento{
+    width:195px;
+    height:172px;
+    display:flex;
+    direction:row;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    
+}
+.imgPagamento{
+    width:50px;
+    height:30px;
+    margin-left:15px;
+   
+}
+.imgPagamento{
+    img{
+        padding:8px;
+        margin-left:-20px;
+    }
+
+  
+}
+
+
+.cadastro{
+    width:430px;
+    height:260px;
+    margin-left:130px;
+    background: #FFFFFF;
+    border-radius: 10px;
+
+}
+
+.tituloCadastro{
+    width:390px;
+    height:51px;
+    margin-top:45px;
+    
+}
+
+
+
+.tituloCadastroReceba{
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #3F3F40;
+    text-align:center;
+}
+
+.tituloCadastro {
+    h2{
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 26px;
+        color: #3F3F40;
+        font-weight: 700;
+        text-align:center;
+        margin-right:50px;
+    }
+  
+}
+
+.descricaoCadastro{
+    width:350px;
+    height:55px;
+    margin-top:20px;
+    margin-left:55px;
+
+}
+.textoAfastado{
+    padding-left:70px;
+}
+
+.campoCadastro{
+    width:301px;
+    height:45px;
+    margin-top:10px;
+    margin-left:55px;
+    display:flex;
+    direction:row;
+}
+
+.campoCadastroInput{
+    width:230px;
+    height:45px;
+    background: #FFFFFF;
+    border: 1px solid #2A2A2A;
+    border-radius: 4px;
+    padding-left:20px;
+    text-transform: uppercase;
+}
+
+.campoCadastroInput  {
+    input::placeholder{
+        color: #C0C0C0;
+    }
+
+}
+
+.campoCadastroButton{
+    width:62px;
+    height:45px;
+    background: #F71963;
+    border-radius: 4px;
+    outline:0;
+    border:0;
+    text-transform:uppercase;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left:10px;
+
+}

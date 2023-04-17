@@ -6,7 +6,7 @@ import { BsHeart } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { BsCart3, BsBoxArrowLeft } from "react-icons/bs";
-import '../css/styles.css';
+import '../styles/header.scss';
 export default function Header() {
   return (
     <div>
@@ -77,7 +77,7 @@ export default function Header() {
                 </li>
                 <li>
                   <div className='iconAssinatura'>
-                    <TbCrown size={20}/>
+                    <TbCrown size={20} style={{marginTop:-2, marginRight:5 }}/>
                     assinatura
                   </div>
                   

@@ -1,6 +1,8 @@
 import React from 'react'
 import Econverse from '../assets/econverse.png';
 import Vtex from '../assets/vtex.png';
+import '../styles/segundaParteFooter.scss';
+
 export default function SegundaParteFooter() {
   return (
     <div className='segundaParteFooter'>

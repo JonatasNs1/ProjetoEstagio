@@ -1,5 +1,6 @@
 import React from 'react'
-import ButtonBanner from './ButtonBanner'
+import ButtonBanner from './ButtonBanner';
+import '../styles/banner.scss';
 
 export default function Banner() {
   return (

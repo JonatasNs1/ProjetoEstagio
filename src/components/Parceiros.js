@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/styles.css';
+import '../styles/parceiros.scss';
 export default function Parceiros() {
   return (
     

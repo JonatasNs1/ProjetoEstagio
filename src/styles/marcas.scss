@@ -1,0 +1,79 @@
+.navegueMarcas{
+    width:1280px;
+    height:331px;
+    margin-top:70px;
+    /* background-color:red; */
+    
+}
+
+.tituloMarcas{
+    width:1280px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    direction:column;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    color: #F71963;
+    padding-top:90px;
+
+}
+
+.todasAsMarcas{
+    width:1280px;
+    height:234px;
+    overflow-x: sroll;
+    display:flex;
+    direction:row;
+    padding-top:30px;
+    /* background-color:blue; */
+}
+
+.circuloMarca{
+    width:211px;
+    height:211px;
+    margin-top:8px;
+    margin-left:30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
+    border-radius:110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.imagemCirculoMarca{
+    width:172px;
+    height:62.66px;
+   
+}
+
+ 
+
+.arrowMarcas{
+    width: 56px;
+    height: 56px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
+    border-radius:110px;
+    margin-top:80px;
+    margin-left:-50px;
+   
+ }
+ 
+ .arrowMarcas{
+    button{
+        outline:none;
+        border:0;
+        padding:15px;
+        color:#0080BF;
+        background-color: #FFFFFF;
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
+        border-radius:110px;
+        cursor:pointer;
+    }
+   
+ }

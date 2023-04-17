@@ -1,13 +1,14 @@
 import React from 'react'
 import { useState } from 'react';
 import Modal from './Modal';
+import '../styles/buttonModal.scss';
 export default function ButtonCard(props) {
 
   const [openModal, setOpenModal] = useState(false)
 
   return (
     <div className='buttonCardCelulares'>
-        <button onClick={() =>setOpenModal(true)}>{props.textCard}</button>
+        <button className='btnCardCelulares' onClick={() =>setOpenModal(true)}>{props.textCard}</button>
                   {openModal ? <Modal onClose={() => setOpenModal(false)}>
                 <div className='principalModal'>
                 <div className='imagemModal'>

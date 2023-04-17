@@ -1,10 +1,10 @@
 import React from 'react'
-
+import '../styles/cardOpcoes.scss';
 export default function CardOpcoes() {
   return (
     <div className='container'>
     <div className='opcoes'>
-          <div className='cards'>
+          <div className='cardsTecnologia'>
             <img className='imgCards' src={require("../assets/monitorar.png")}/>
             
           </div>

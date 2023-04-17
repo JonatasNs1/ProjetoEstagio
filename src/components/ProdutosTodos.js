@@ -1,10 +1,10 @@
 import React from 'react'
-
+import '../styles/produtosTodos.scss';
 export default function ProdutosTodos() {
   return (
     <div className='container'>
     <div  className='produtosRelacionados'>
-      <div className='teste'>
+      <div >
           <h1>
             Produtos relacionados
           </h1>

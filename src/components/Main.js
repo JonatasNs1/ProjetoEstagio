@@ -6,7 +6,7 @@ import ProdutosTodos from './ProdutosTodos';
 import Marcas from './Marcas';
 import CardProduto from './CardProduto';
 import Parceiros from './Parceiros';
-import Modal from './Modal';
+
 export default function Main() {
   return (
     <main>
@@ -19,7 +19,9 @@ export default function Main() {
          </div>
 
        <div>
-        <ProdutosRelacionados/>
+        <ProdutosRelacionados
+        
+        />
        </div>
 
        
@@ -42,7 +44,7 @@ export default function Main() {
           <Marcas/>
          </div>
           
-          <div>
+          <div style={{marginTop:140}}>
             <ProdutosTodos/>
           </div>
 

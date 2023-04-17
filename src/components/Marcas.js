@@ -1,7 +1,7 @@
 import React from 'react'
 import MarcaCirculo from './MarcaCirculo'
 import { SlArrowRight } from "react-icons/sl";
-
+import '../styles/marcas.scss';
 
 
 

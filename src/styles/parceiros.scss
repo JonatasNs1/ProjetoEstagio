@@ -1,0 +1,59 @@
+.parceiros{
+    width:1280px;
+    height:350px;
+    /* background-color: blue; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    direction:row;
+}
+
+.parceirosImagem{
+    width:589.73px;
+    height:350px;
+    margin-left:40px;
+    margin-right:40px;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../assets/parceiros.png");
+}
+
+.textoParceiros{
+    width:195px;
+    height:60px;
+    padding-top:122px;
+    padding-left:30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.descricaoParceiros{
+    width: 181px;
+    height: 48px;
+    padding-left: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color:#FFFFFF;
+
+
+}
+
+.buttonParceiros button{
+    width: 131px;
+    height: 48px;
+    margin-left:30px;
+    margin-top:25px;
+    background-color: #F71963;
+    border-radius: 10px;
+    outline: 0;
+    font-weight:bold;
+    font-size:15px;
+    color:#FFFFFF;
+    border:0;
+    align-text:center;
+    text-transform: uppercase;
+}    

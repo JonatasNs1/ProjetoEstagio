@@ -1,0 +1,79 @@
+
+ .principalModal{
+    width:769px;
+    height:300px;
+    display:flex; 
+    direction:column; 
+ }
+ .imagemModal{
+    width:200px;
+    height:300px;
+
+ }
+
+ .nomeCardModal {
+   h1{
+    width:769px;
+    height:16.86px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    margin-top:50px;
+    color: #041E50;
+    text-align:center;
+   }
+ }
+
+ .precoCardModal  {
+   p{
+    width: 119px;
+    height: 16.86px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #041E50; 
+    margin-top:50px;
+    margin-left:250px;
+   }
+
+ }
+ 
+ .descricaoCardModal {
+    p{
+    width: 290px;
+    height: 18.55px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top:50px;
+    margin-left:250px;
+    color: #222222;
+    }
+    
+ }
+
+ .vejaMaisCardModal 
+ {
+   p{
+    width: 290px;
+    height: 10.12px;
+    margin-top:30px;
+    margin-left:250px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #041E50;
+    cursor:pointer;
+   }
+ }
+ 

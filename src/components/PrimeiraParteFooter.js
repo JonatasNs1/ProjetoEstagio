@@ -14,6 +14,9 @@ import Instagram from '../assets/instagram.PNG';
 import Youtube from '../assets/youtube.PNG';
 import TextoFooter from './TextoFooter';
 import TituloFooter from './TituloFooter';
+import '../styles/footer.scss';
+import '../styles/primeiraParterFooter.scss';
+
 
 export default function PrimeiraParteFooter() {
   return (
