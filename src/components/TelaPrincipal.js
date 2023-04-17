@@ -1,4 +1,4 @@
-import '../css/styles.css';
+
 import '../styles/telaPrincipal.scss';
 import Header from './Header';
 import Main from './Main';

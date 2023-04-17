@@ -6,6 +6,7 @@ import { BsHeart } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { BsCart3, BsBoxArrowLeft } from "react-icons/bs";
+
 import '../styles/header.scss';
 export default function Header() {
   return (
@@ -45,7 +46,9 @@ export default function Header() {
                </button>
             </div>
             <div className='divIcones'>
-              <BsBoxArrowLeft className='icones' size={20} color="#9F9F9F"/>
+           
+              <img className='icones'  src={require("../assets/logout.png")}/>
+                {/* <BsBoxArrowLeft className='icones' size={20} color="#9F9F9F"/> */}
               <BsHeart className='icones' size={20} color="#9F9F9F"/>
               <HiOutlineUserCircle className='icones'  size={20} color="#9F9F9F"/>
               <BsCart3 className='icones' size={20} color="#9F9F9F"/>

@@ -6,6 +6,7 @@ import ProdutosTodos from './ProdutosTodos';
 import Marcas from './Marcas';
 import CardProduto from './CardProduto';
 import Parceiros from './Parceiros';
+import Produtos from './Produtos';
 
 export default function Main() {
   return (
@@ -37,7 +38,7 @@ export default function Main() {
             <CardProduto/>
           </div>
          <div>
-            <Parceiros/>
+            <Produtos/>
          </div>
 
          <div>

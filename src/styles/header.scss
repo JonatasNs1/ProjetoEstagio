@@ -64,7 +64,7 @@
 }
 
 .campoBusca{
-    input:hover{
+    input{
     color: black;
     cursor: text;
     }
@@ -80,12 +80,11 @@ input::placeholder {
     height:28px;
     background-color:transparent;
     border:0;
-    cursor:pointer;
-    transition:transform 0.5;
+
 }
 
 .buttonPesquisa:hover{
-    transform:scale(1.2);
+    cursor:pointer;
 }
 .divIcones{
     width:150px;
@@ -97,7 +96,7 @@ input::placeholder {
     width:24px;
     height:24px;
     padding-top:16px;
-    padding-left:10px;
+    padding-left:11px;
     padding-right:2px;
 }
 

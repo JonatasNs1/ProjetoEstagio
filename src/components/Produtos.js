@@ -2,14 +2,14 @@ import React from 'react'
 import '../styles/parceiros.scss';
 import ParceiroTexto from './ParceiroTexto';
 
-export default function Parceiros() {
+export default function Produtos() {
   return (
     
     <div className='container'>
     <div className='parceiros'>
       <div className='parceirosImagem'>
       <ParceiroTexto
-          texto={"Parceiros"}
+          texto={"Produtos"}
           />
           <div className='descricaoParceiros'>
             <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -22,7 +22,7 @@ export default function Parceiros() {
       </div>
       <div className='parceirosImagem'>
       <ParceiroTexto
-          texto={"Parceiros"}
+          texto={"Produtos"}
           />
             <div className='descricaoParceiros'>
               <p>Lorem ipsum dolor sit amet, consectetur</p>

@@ -13,7 +13,7 @@ export default function ProdutosRelacionados() {
     <div className='opcoesDeMenu'>
       <ul className='listasOpcoesMenu'>
         <li><span className='linkPromocao'>celular<span/></span></li>
-        <li>acessorios</li>
+        <li>acessórios</li>
         <li>tablets</li>
         <li>notbooks</li>
         <li>tvs</li>

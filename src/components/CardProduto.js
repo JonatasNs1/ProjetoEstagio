@@ -1,4 +1,4 @@
-import '../css/styles.css';
+
 import '../styles/cardsProduto.scss';
 import axios from 'axios';
 import React, { useEffect,useState,  useRef} from 'react';

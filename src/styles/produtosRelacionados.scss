@@ -7,7 +7,10 @@
     align-items:center;
     justify-content:center;
     direction:column;
-    /* background-color:red; */
+
+    font-weight: bold;
+    font-size: 30px;
+
   
 }
 
@@ -34,20 +37,15 @@
     width: 211.5px;
     height: 30px;
     list-style: none;
-    color:#9F9F9F;
+    color:#3B3B3B;
     text-align: center;
     text-transform: uppercase;
-    /* margin-left:34px; */
     border: 1px solid #BDBDBD;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
     font-size: 16px;
     line-height: 16px;
     display:flex;
     align-items: center;
     justify-content:center;
-    /* background-color:green; */
 }
 
 .linkPromocao{
