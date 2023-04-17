@@ -290,6 +290,7 @@ padding-left: 89px;
 
     width:1280px;
     height:72px;
+    margin-top:100px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -472,12 +473,15 @@ padding-left: 89px;
     width:68px;
     height:18px;
     margin-top:5px;
-    margin-left:11px;
+    margin-bottom:5px;
+    /* margin-left:11px; */
     color:#F71963;
     font-weight: bold;
     font-size: 12px;
     /* background-color:blue; */
 }
+
+
 
 .buttonCardCelulares button{
     width:220px;
@@ -491,6 +495,7 @@ padding-left: 89px;
     border:0;
     align-text:center;
     text-transform: uppercase;
+    cursor:pointer;
 }
 
 .buttonsSetas{
@@ -617,7 +622,7 @@ color:#FFFFFF;
     width:211px;
     height:211px;
     margin-top:8px;
-    margin-left:8px;
+    margin-left:30px;
     background-color: #FFFFFF;
     box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
     border-radius:110px;
@@ -900,6 +905,151 @@ footer{
     margin-top:18px;
 }
 
+
+ 
+.modal{
+    position:fixed;
+    top: '0';
+    bottom: '0';
+    left: '0';
+    right: '0';
+    background-color: 'rgb(0,0,0, 0.7)';
+    z-index:1000;
+}
+
+ .containerModal{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding:150px;
+    background-color:#ffffff;
+    width:769px;
+    height:299.26px;
+ 
+ }
+
+.close {
+    /* background-color: transparent; */
+    border:none;
+    outline: none;
+    width:769px;
+    height:20px;
+    /* background-color:red; */
+    cursor:pointer;  
+    /* background-color:blue; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* position:relative; */
+   
+    /* align-items:start;   */
+    /* background-color:black; */
+    /* padding-left:3s00px; */
+    
+ }
+
+ .close button{
+    transform: translate(400px);
+ }
+
+
+
+ .imagemModal{
+    width:200px;
+    height:300px;
+    /* background-color:red; */
+ }
+ .principalModal{
+    width:769px;
+    height:300px;
+    /* background-color:blue; */
+    display:flex; 
+    direction:column; 
+ }
+
+ .nomeCardModal h1{
+    width:769px;
+    height:16.86px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    margin-top:50px;
+    margin-left:40px;
+    color: #041E50;
+    text-align:center;
+    /* background-color:red; */
+ }
+
+ .precoCardModal p {
+    width: 119px;
+    height: 16.86px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #041E50; 
+   
+    margin-top:50px;
+    margin-left:192px;
+    /* background-color:red; */
+ }
+ 
+ .descricaoCardModal p{
+    width: 290px;
+    height: 18.55px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top:50px;
+    margin-left:192px;
+    color: #222222;
+ }
+
+ .vejaMaisCardModal p{
+    width: 290px;
+    height: 10.12px;
+    margin-top:30px;
+    margin-left:192px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #041E50;
+    cursor:pointer;
+ }
+ 
+
+ .arrowMarcas{
+    width: 56px;
+    height: 56px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
+    border-radius:110px;
+    margin-top:80px;
+    margin-left:-50px;
+   
+ }
+ 
+ .arrowMarcas button{
+    outline:none;
+    border:0;
+    /* padding-left:10px; */
+    padding:15px;
+    color:#0080BF;
+    background-color: #FFFFFF;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
+    border-radius:110px;
+    cursor:pointer;
+ }
 
 
 

@@ -2,10 +2,19 @@ import '../css/styles.css';
 import axios from 'axios';
 import React, { useEffect,useState,  useRef} from 'react';
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-
+import ButtonCard from './ButtonCard';
+import ImagemCard from './ImagemCard';
+import NomeCard from './NomeCard';
+import DescricaoCard from './DescricaoCard'
+import Desconto from './Desconto';
+import PrecoCard from './PrecoCard';
+import JurosCard from './JurosCard';
+import FreteGratis from './FreteGratis';
 
 function CardProduto() {
 
+   
+    
     const [data, setData] = useState([]);
     const carousel = useRef(null);
     // const carousel2 = useRef(null);
@@ -43,33 +52,49 @@ return(
                       {data.map((dat, key)=>{
 
                           return(
-                            <div className='cardCelulares' >
+                          <div className='cardCelulares' >
                             <div className='subCardCelulares'>
-                              <div className='imagemCardCelulares'>
-                                <img src={dat.photo}/>
+                              <div>
+                                <ImagemCard
+                                photo={dat.photo}
+                                />  
+                               </div>
+                             <div>
+                             <NomeCard 
+                                productName = {dat.productName}
+                              />
                               </div>
-                              <div className='descricaoCardCelulares'>
-                                <p> {dat.descriptionShort}</p>
+                              <div>
+                                  <DescricaoCard
+                                  descriptionShort={dat.descriptionShort}
+                                  />
                               </div>
-                              <div className='nomeCardCelulares'>
-                              <p>{dat.productName}</p>
-                               
-                              </div>
-                              <div className='valorAntesCardCelulares'>
-                                <span>R$</span>30,90
-                              </div>
-                              <div className='precoCardCelulares'>
-                              <span>R$</span>{dat.price}
-                              </div>
-                              <div className='jurosCardCelulares'>
-                                <p>ou 2x de R$ 49,95 sem juros</p>
+                            
+                            <div>
+                                <Desconto/>
+                            </div>
+                              <div>
+                                <PrecoCard
+                                price = {dat.price}
+                                />
+                                </div>
+                              <div>
+                              <JurosCard/> 
                               </div>
                               
-                              <div className='freteCardCelulares'></div>
-                              <div className='buttonCardCelulares'>
-                              <button >Comprar</button>
-                              
-                              </div>
+                           <div>
+                              <FreteGratis/>
+                            </div>
+                              <ButtonCard
+                              textCard = "comprar"
+                              photo={ <img src={dat.photo}/>}
+                              productName = {dat.productName}
+                              descriptionShort={dat.descriptionShort}
+                              price = {dat.price}
+                              />
+
+                          
+                            
                               
                             </div>
                           </div> 
@@ -77,6 +102,7 @@ return(
                           })}
                    
               </div>
+              
 
                 <div className="buttonsSetas">
                    <button onClick={handleLeftClick}>
